@@ -32,19 +32,19 @@ let package = Package(
     ]
 )
 
-#if canImport(PackageConfig)
-import PackageConfig
+// #if canImport(PackageConfig)
+// import PackageConfig
 
-let config = PackageConfiguration([
-    "rocket": [
-	"before": [
-            "scripts/update_changelog.sh",
-            "scripts/update_podspec.sh"
-	],
-	"after": [
-            "rake create_release\\[\"$VERSION\"\\]",
-            "scripts/update_docs_website.sh"
-	]
-    ]
-]).write()
-#endif
+// let config = PackageConfiguration([
+//     "rocket": [
+// 	"before": [
+//             "scripts/update_changelog.sh",
+//             "scripts/update_podspec.sh"
+// 	],
+// 	"after": [
+//             "rake create_release\\[\"$VERSION\"\\]",
+//             "scripts/update_docs_website.sh"
+// 	]
+//     ]
+// ]).write()
+// #endif
